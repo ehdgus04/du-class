@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product_list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .product_list li {
+            position: relative;
+            float: left;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .product_list li img {
+            margin: 0;
+            padding: 0;
+            float: left;
+            z-index: 5;
+        }
+        .product_list .caption {
+            position: absolute;
+            top: 200px;
+            width: 300px;
+            height: 200px;
+            background-color: rgba(0,0,0,0.6);
+            padding-top: 20px;
+            opacity: 0;
+            z-index: 10;
+            transition: all 0.2s ease-in-out;
+        }
+        .product_list li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200px);
+        }
+        .product_list .caption h1, .product_list .caption p {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>신상품 목록</h1>
+    <div id="container">
+        <ul class="product_list">
+            <li>
+                <img src="http://via.placeholder.com/300x200">
+                <div class="caption">
+                    <h1>인형</h1>
+                    <p>새로 나온 인형</p>
+                    <p>가격: 20,000원</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="product_list">
+            <li>
+                <img src="http://via.placeholder.com/300x200">
+                <div class="caption">
+                    <h1>인형</h1>
+                    <p>새로 나온 인형</p>
+                    <p>가격: 20,000원</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="product_list">
+            <li>
+                <img src="http://via.placeholder.com/300x200">
+                <div class="caption">
+                    <h1>인형</h1>
+                    <p>새로 나온 인형</p>
+                    <p>가격: 20,000원</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
